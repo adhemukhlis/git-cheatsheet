@@ -9,7 +9,7 @@ Git Command - Cheatsheet
 - [show git commit version](#show-git-commit-version)
 - [undo commit as new commit](#undo-commit-as-new-commit)
 - [reset to online repo origin](#reset-to-online-repo-origin)
-- [delete files and folder](#delete-files-and-folder)
+- [delete file and folder](#delete-file-and-folder)
 ***
 <br>
 <br>
