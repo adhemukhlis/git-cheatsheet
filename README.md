@@ -47,7 +47,6 @@ Git Command - Cheatsheet
 > the safest way without losing commits :)<br>
 > `git log --abbrev-commit` to show the commit versions
 1. git revert --no-commit `commit_version`..HEAD
-2. git commit
 <br>
 <br>
 
