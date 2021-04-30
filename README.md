@@ -40,5 +40,3 @@ cheatsheet untuk Git Command
 > the safest way without losing commits :)
 1. git revert --no-commit 0766c053..HEAD
 2. git commit
-
-## test revert sample
