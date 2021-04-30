@@ -20,7 +20,7 @@ Git Command - Cheatsheet
 <br>
 <br>
 
-## clone and push
+## clone
 1. git clone `https://github.com/username/repo_name.git`
 2. cd `repo_name`
 <br>
