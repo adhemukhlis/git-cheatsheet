@@ -2,7 +2,9 @@
 Git Command - Cheatsheet
 ***
 ## table of content
+- [set email and name](#set-email-and-name)
 - [clone and push](#clone-and-push)
+- [push](#push)
 - [push existing local repo](#push-existing-local-repo)
 - [show git commit version](#show-git-commit-version)
 - [undo commit as new commit](#undo-commit-as-new-commit)
@@ -12,16 +14,22 @@ Git Command - Cheatsheet
 <br>
 <br>
 
-## clone and push
+## set email and name
 1. git config --global user.email "`your_email@gmail.com`"
 2. git config --global user.name "`your_username`"
-3. git clone `https://github.com/user/repo.git`
-4. *cd to git
-5. *make changes
-6. git add --all
-7. git commit -m "`messages`"
-8. git push
-9. *login github u:`your_username` p:`your_password`
+<br>
+<br>
+
+## clone and push
+1. git clone `https://github.com/username/repo_name.git`
+2. cd `repo_name`
+<br>
+<br>
+
+## push
+1. git add --all
+2. git commit -m "`messages`"
+3. git push
 <br>
 <br>
 
@@ -29,7 +37,7 @@ Git Command - Cheatsheet
 1. git -b master
 2. git add .
 3. git commit -m "`messages`"
-4. git remote add origin `https://github.com/user/repo.git`
+4. git remote add origin `https://github.com/username/repo_name.git`
 5. git remote -v
 6. git push -u origin master -f
 <br>
