@@ -27,3 +27,16 @@ cheatsheet untuk Git Command
 ## reset to online repo origin
 1. git fetch origin
 2. git reset --hard origin/master
+
+## push existing local repo
+1. git -b master
+2. git add .
+3. git commit -m "`messages`"
+4. git remote add origin `https://github.com/user/repo.git`
+5. git remote -v
+6. git push -u origin master -f
+
+## undo commit as new commit
+> the safest way without losing commits :)
+1. git revert --no-commit 0766c053..HEAD
+2. git commit
