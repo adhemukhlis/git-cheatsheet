@@ -34,12 +34,14 @@ Git Command - Cheatsheet
 <br>
 
 ## push existing local repo
-1. git -b master
-2. git add .
-3. git commit -m "`messages`"
-4. git remote add origin `https://github.com/username/repo_name.git`
-5. git remote -v
-6. git push -u origin master -f
+1. ```shell 
+2. git chackout -b master
+3. ```
+4. git add .
+5. git commit -m "`messages`"
+6. git remote add origin `https://github.com/username/repo_name.git`
+7. git remote -v
+8. git push -u origin master -f
 <br>
 <br>
 
