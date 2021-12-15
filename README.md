@@ -9,6 +9,7 @@ Git Command - Cheatsheet
 - [show git commit version](#show-git-commit-version)
 - [undo commit as new commit](#undo-commit-as-new-commit)
 - [reset to online repo origin](#reset-to-online-repo-origin)
+- [revert after rebase/merge](#revert-after-rebase-or-merge)
 - [delete file and folder](#delete-file-and-folder)
 ***
 <br>
@@ -79,6 +80,22 @@ git push -u origin master -f
 ## reset to online repo origin
 1. git fetch origin
 2. git reset --hard origin/master
+<br>
+<br>
+
+## revert after rebase or merge
+1. reflog
+```shell
+git reflog
+```
+3. reset to HEAD target (find ur target commit after `git reflog`) 
+```shell 
+git reset --hard HEAD@{2}
+```
+or
+```shell 
+git reset --hard "HEAD@{2}"
+```
 <br>
 <br>
 
