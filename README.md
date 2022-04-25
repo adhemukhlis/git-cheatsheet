@@ -86,7 +86,7 @@ git push -u origin master -f
 ## revert after rebase or merge
 1. reflog
 ```shell
-git reflog
+git reflog --pretty=short --date=iso
 ```
 3. reset to HEAD target (find ur target commit after `git reflog`) 
 ```shell 
