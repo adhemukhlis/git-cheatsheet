@@ -106,3 +106,8 @@ git reset --hard "HEAD@{2}"
 1. git rm `./folder/folder` -r
 <br>
 <br>
+
+## reset local credential
+```shell
+git config --local credential.helper ""
+```
