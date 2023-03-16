@@ -11,6 +11,7 @@ Git Command - Cheatsheet
 - [reset to online repo origin](#reset-to-online-repo-origin)
 - [revert after rebase/merge](#revert-after-rebase-or-merge)
 - [delete file and folder](#delete-file-and-folder)
+- [reset local credential](#reset-local-credential)
 ***
 <br>
 <br>
