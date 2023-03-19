@@ -112,3 +112,11 @@ git reset --hard "HEAD@{2}"
 ```shell
 git config --local credential.helper ""
 ```
+
+## bypass husky precommit & prepush (AT YOUR OWN RISK: if you need to push do it ASAP without getting stuck waiting for husky rules haha)
+```shell
+git commit -m "message" --no-verify
+```
+```shell
+git push --no-verify
+```
