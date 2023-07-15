@@ -12,6 +12,7 @@ Git Command - Cheatsheet
 - [revert after rebase/merge](#revert-after-rebase-or-merge)
 - [delete file and folder](#delete-file-and-folder)
 - [reset local credential](#reset-local-credential)
+- [resolving issue "fatal: refusing to merge unrelated histories" - 1](#if-you-encounter-the-"fatal:-refusing-to-merge-unrelated-histories"-error-even-when-attempting-to-pull-changes-from-the-remote-repository,-you-can-try-the-following-steps-to-resolve-the-issue:)
 ***
 <br>
 <br>
@@ -120,3 +121,32 @@ git commit -m "message" --no-verify
 ```shell
 git push --no-verify
 ```
+
+## If you encounter the "fatal: refusing to merge unrelated histories" error even when attempting to pull changes from the remote repository, you can try the following steps to resolve the issue:
+1. Fetch the remote repository's changes without merging them:
+```bash
+git fetch --all
+
+```
+2. Create an empty commit to establish a common root for the branches:
+
+```bash
+git commit --allow-empty -m "Empty commit"
+```
+
+3. Merge the remote branch into your new branch using the --allow-unrelated-histories flag:
+
+```bash
+git merge origin/main --allow-unrelated-histories
+```
+4. Resolve any merge conflicts if they occur. Use a text editor or Git tools to manually resolve conflicts in affected files.
+5. Commit the changes
+```bash
+git commit -m "Merge unrelated histories"
+```
+6. Push the changes to the remote repository:
+```bash
+git push origin your-branch
+```
+
+
