@@ -12,8 +12,8 @@ Git Command - Cheatsheet
 - [revert after rebase/merge](#revert-after-rebase-or-merge)
 - [delete file and folder](#delete-file-and-folder)
 - [reset local credential](#reset-local-credential)
-- [resolving issue "fatal: refusing to merge unrelated histories" - 1](#if-you-encounter-the-"fatal:-refusing-to-merge-unrelated-histories"-error-even-when-attempting-to-pull-changes-from-the-remote-repository,-you-can-try-the-following-steps-to-resolve-the-issue:)
-- [Link to specific section](#if-you-encounter-the-"fatal:-refusing-to-merge-unrelated-histories"-error-even-when-attempting-to-pull-changes-from-the-remote-repository,-you-can-try-the-following-steps-to-resolve-the-issue)
+- [resolving issue "fatal: refusing to merge unrelated histories" - 1](#if-you-encounter-the-fatal-refusing-to-merge-unrelated-histories-error-even-when-attempting-to-pull-changes-from-the-remote-repository-you-can-try-the-following-steps-to-resolve-the-issue)
+
 
 
 ***
