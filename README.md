@@ -13,8 +13,7 @@ Git Command - Cheatsheet
 - [delete file and folder](#delete-file-and-folder)
 - [reset local credential](#reset-local-credential)
 - [resolving issue "fatal: refusing to merge unrelated histories" - 1](#if-you-encounter-the-fatal-refusing-to-merge-unrelated-histories-error-even-when-attempting-to-pull-changes-from-the-remote-repository-you-can-try-the-following-steps-to-resolve-the-issue)
-
-
+- [accidentally commit unwanted files](#accidentally-commit-unwanted-files-and-want-to-back-to-unstaged-area)
 
 ***
 <br>
@@ -152,4 +151,8 @@ git commit -m "Merge unrelated histories"
 git push origin your-branch
 ```
 
+## accidentally commit unwanted files and want to back to unstaged area
 
+```bash
+git reset --soft HEAD^
+```
