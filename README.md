@@ -56,37 +56,37 @@ common
 
 1. create branch
 
-   ```shell
+   ```bash
    git checkout -b master
    ```
 
 2. add to git
 
-   ```shell
+   ```bash
    git add .
    ```
 
 3. commit
 
-   ```shell
+   ```bash
    git commit -m "`messages`"
    ```
 
 4. adding remote repository
 
-   ```shell
+   ```bash
    git remote add origin `https://github.com/username/repo_name.git`
    ```
 
 5. show remote rpository
 
-   ```shell
+   ```bash
    git remote -v
    ```
 
 6. push commit to repository
 
-   ```shell
+   ```bash
    git push -u origin master -f
    ```
 
@@ -124,19 +124,19 @@ common
 
 1. reflog
 
-   ```shell
+   ```bash
    git reflog --pretty=short --date=iso
    ```
 
 2. reset to HEAD target (find ur target commit after `git reflog`)
 
-   ```shell
+   ```bash
    git reset --hard HEAD@{2}
    ```
 
    or
 
-   ```shell
+   ```bash
    git reset --hard "HEAD@{2}"
    ```
 
@@ -157,17 +157,17 @@ common
 
 ## reset local credential
 
-```shell
+```bash
 git config --local credential.helper ""
 ```
 
 ## bypass husky precommit & prepush (AT YOUR OWN RISK: if you need to push do it ASAP without getting stuck waiting for husky rules haha)
 
-```shell
+```bash
 git commit -m "message" --no-verify
 ```
 
-```shell
+```bash
 git push --no-verify
 ```
 
@@ -175,38 +175,38 @@ git push --no-verify
 
 1. Fetch the remote repository's changes without merging them:
 
-   ```shell
+   ```bash
    git fetch --all
    ```
 
 2. Create an empty commit to establish a common root for the branches:
 
-   ```shell
+   ```bash
    git commit --allow-empty -m "Empty commit"
    ```
 
 3. Merge the remote branch into your new branch using the --allow-unrelated-histories flag:
 
-   ```shell
+   ```bash
    git merge origin/main --allow-unrelated-histories
    ```
 
 4. Resolve any merge conflicts if they occur. Use a text editor or Git tools to manually resolve conflicts in affected files.
 5. Commit the changes
 
-   ```shell
+   ```bash
    git commit -m "Merge unrelated histories"
    ```
 
 6. Push the changes to the remote repository:
 
-   ```shell
+   ```bash
    git push origin your-branch
    ```
 
 ## accidentally commit unwanted files and want to back to unstaged area
 
-```shell
+```bash
 git reset --soft HEAD^
 ```
 
@@ -217,18 +217,18 @@ git reset --soft HEAD^
 1. add filename to `.gitignore` file
     > optional : if the file may exist under certain conditions, and want to prevent it from being tracked to git
 2. untrack and remove file from commit
-   ```shell
+   ```bash
    git rm -r --cached .env
    ```
 3. remove file from all git commit history
-   ```shell
+   ```bash
    git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch .env" HEAD
    ```
 4. commit changes
-   ```shell
+   ```bash
    git add . && git commit -m "remove unwanted files"
    ```
 5. push to origin to implement removed file to remote git history
-   ```shell
+   ```bash
    git push --force
    ```
