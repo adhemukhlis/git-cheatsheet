@@ -220,13 +220,13 @@ git reset --soft HEAD^
    ```bash
    git rm -r --cached .env
    ```
-3. remove file from all git commit history
-   ```bash
-   git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch .env" HEAD
-   ```
-4. commit changes
+3. commit changes
    ```bash
    git add . && git commit -m "remove unwanted files"
+   ```
+4. remove file from all git commit history
+   ```bash
+   git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch .env" HEAD
    ```
 5. push to origin to implement removed file to remote git history
    ```bash
