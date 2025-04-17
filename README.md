@@ -15,7 +15,7 @@ pinned
 ---
 common
 - [set email and name](#set-email-and-name)
-- [clone and push](#clone-and-push)
+- [clone](#clone)
 - [push](#push)
 - [push existing local repo](#push-existing-local-repo)
 - [show git commit version](#show-git-commit-version)
@@ -32,15 +32,33 @@ common
 
 ## set email and name
 
-1. git config --global user.email "`your_email@gmail.com`"
-2. git config --global user.name "`your_username`"
+1. set email
+
+   ```bash
+   git config --global user.email "your_email@gmail.com"
+   ```
+
+2. set username
+
+   ```bash
+   git config --global user.name "your_username"
+   ```
    <br>
    <br>
 
 ## clone
 
-1. git clone `https://github.com/username/repo_name.git`
-2. cd `repo_name`
+1. clone online repo
+
+   ```bash
+   git clone https://github.com/username/repo_name.git
+   ```
+
+3. go to repo directory
+
+   ```bash
+   cd `repo_name`
+   ```
    <br>
    <br>
 
