@@ -11,6 +11,7 @@ pinned
 - [accidentally push unwanted files and want to remove from git history](#accidentally-push-unwanted-files-and-want-to-remove-from-git-history)
 - [revert after rebase/merge](#revert-after-rebase-or-merge)
 - [undo commit as new commit](#undo-commit-as-new-commit)
+- [compare between two commits](#compare-between-two-commits)
 
 ---
 common
@@ -254,3 +255,10 @@ git reset --soft HEAD^
    ```bash
    git for-each-ref --format="%(refname)" refs/original/ | xargs -n 1 git update-ref -d
    ```
+
+## compare between two commits
+access url 
+
+```
+https://github.com/USERNAME/REPO_NAME/compare/SHORT_HASH..SHORT_HASH
+```
