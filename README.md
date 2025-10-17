@@ -247,11 +247,15 @@ git reset --soft HEAD^
    ```bash
    git filter-branch --index-filter "git rm -rf --cached --ignore-unmatch .env" HEAD
    ```
-5. push to origin to implement removed file to remote git history
+   all branches version
+   ```bash
+   git filter-branch -f --index-filter "git rm -rf --cached --ignore-unmatch .env" -- --all
+   ```
+6. push to origin to implement removed file to remote git history
    ```bash
    git push --force
    ```
-6. clear the backup
+7. clear the backup
    ```bash
    git for-each-ref --format="%(refname)" refs/original/ | xargs -n 1 git update-ref -d
    ```
