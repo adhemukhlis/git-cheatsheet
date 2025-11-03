@@ -25,6 +25,7 @@ common
 - [reset local credential](#reset-local-credential)
 - [resolving issue "fatal: refusing to merge unrelated histories" - 1](#if-you-encounter-the-fatal-refusing-to-merge-unrelated-histories-error-even-when-attempting-to-pull-changes-from-the-remote-repository-you-can-try-the-following-steps-to-resolve-the-issue)
 - [accidentally commit unwanted files](#accidentally-commit-unwanted-files-and-want-to-back-to-unstaged-area)
+- [credential with GITHUB_ACCESS_TOKEN](#credential-with-github_access_token)
 
 ---
 
@@ -266,3 +267,14 @@ access url
 ```
 https://github.com/USERNAME/REPO_NAME/compare/SHORT_HASH..SHORT_HASH
 ```
+
+## credential with GITHUB_ACCESS_TOKEN
+> [!CAUTION]
+> not to be imitated at zero risk of tolerance
+1. access [Settings > Developer Settings > Fine-grained tokens](https://github.com/settings/personal-access-tokens)
+2. hit `Generate new token`
+3. fill the `Token name`, and set `Expiration`
+4. set `Repository access` to `Only select repositories`, then select target repo
+5. add permissions repositories with hit `+ Add permissions`, find end check at `Contents`, and keep `Content` access with `read-only`
+6. hit the `Generate token` (it will popping up confirmation info, just `Generate token`), copy the generated token, ex: `github_pat_XXXXXXLOOONG_TEXT_NO_SPACE` 
+7. implement access token to clone like `git clone https://<GITHUB_ACCESS_TOKEN>@github.com/<USERNAME>/<REPOSITORY>.git`
