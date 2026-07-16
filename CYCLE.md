@@ -14,7 +14,7 @@ Before creating your new branch, always get the latest code from the remote repo
 
 ```bash
 git checkout main
-git pull origin main
+git pull --rebase=true origin main --prune
 ```
 
 ### Step 2: Create a New Branch
@@ -129,7 +129,7 @@ Get the merged changes onto your local `main` branch.
 
 ```bash
 git checkout main
-git pull origin main
+git pull --rebase=true origin main --prune
 ```
 
 ### Step 2: Delete Local Branch
